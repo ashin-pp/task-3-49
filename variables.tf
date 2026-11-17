@@ -33,3 +33,15 @@ variable "github_repository" {
   type        = string
   default     = "ashin-pp/task-3-49"
 }
+
+variable "github_owner_id" {
+  description = "Numeric GitHub user id included in the OIDC subject"
+  type        = string
+  default     = "213789079"
+}
+
+variable "github_repository_id" {
+  description = "Numeric GitHub repository id included in the OIDC subject"
+  type        = string
+  default     = "1461017166"
+}

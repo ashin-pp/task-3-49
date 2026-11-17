@@ -32,7 +32,7 @@ data "aws_iam_policy_document" "github_assume" {
     condition {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${var.github_repository}:ref:refs/heads/main"]
+      values   = ["repo:ashin-pp@${var.github_owner_id}/task-3-49@${var.github_repository_id}:ref:refs/heads/main"]
     }
   }
 }
